@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .header-logo{
@@ -17,13 +18,15 @@
 }
 
 .main{
-    background-color: gray;
+    background-color: rgb(205, 207, 214);
+    padding: 50px;
 }
 
 .main-container{
     margin: 0 auto;
     max-width: 900px;
     background-color: white;
+    border-radius: 10px;
 }
 
 .header-button{
@@ -34,20 +37,21 @@
 .button-task{
     background-color: rgb(105, 157, 234);
     color:white;
-    padding: 10px;
+    padding: 5px 10px;
     border: none;
     border-radius: 10px;
 }
 
 .button-section{
     background-color: white;
-    padding: 10px;
-    border-color: gray;
+    color: gray;
+    padding: 5px 10px;
+    border-color: rgb(205, 207, 214);
     border-radius: 10px;
 }
 
 .list-container{
-    margin: 20px;
+    margin: 20px 50px;
 }
 
 .lista{
@@ -63,12 +67,20 @@ li{
     border: 1px solid green;
     color: green;
     border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
 }
 
 .cross{
     border: 1px solid red;
     color: red;
     border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
 }
 
 .editorial{
