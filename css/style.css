@@ -56,9 +56,55 @@
     border-radius: 50%;
 }
 
+.cross{
+    border: 1px solid red;
+    color: red;
+    border-radius: 50%;
+}
+
 .editorial{
     font-size: 10px;
     background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.q1goals{
+    font-size: 10px;
+    background-color: violet;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.recruting{
+    font-size: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.mobile{
+    font-size: 10px;
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.website{
+    font-size: 10px;
+    background-color: pink;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.sales{
+    font-size: 10px;
+    background-color: yellowgreen;
     color: white;
     padding: 5px 10px;
     border-radius: 10px;
