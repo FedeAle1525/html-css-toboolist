@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Tags "link" per importare font da Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Toboolist</title>
 </head>
 <body>
     <!-- Logo e nome -->
     <header class="header-logo">
+        <!-- Sarebbe stato meglio inserire un "div" dentro al "header" per gestire il padding e i bordi -->
         <img class="logo" src="img/Logo.png" alt="Logo"> 
         <h1 class="titolo">Toobolist</h1>
     </header>
@@ -20,13 +25,16 @@
                 <button class="button-task">Add Task</button>
                 <button class="button-section">Add Section</button>
             </header>
-            <hr>
+            <!-- Invece del tag "hr", si può dare il bordo inferiore al "header-button" -->
+            <!-- Il tag "hr" va usato solo come separatore semantico e non come linea grafica -->
+            <!-- <hr> -->
 
             <section>
                 <!-- Lista "New Task" -->
+                <!-- Per evitare duplicazione di codice html meglio usare un unico contenitore per le 3 liste -->
                 <div class="list-container">
                     <ul class="lista">
-                        <li>&downarrow; <strong>New Task</strong>
+                        <li>&dtrif; <span class="title-list">New Task</span>
                             <ul class="lista">
                                 <li> <span class="check">&check;</span> 
                                     Quarterly Newsletter
@@ -40,7 +48,7 @@
                 <!-- Lista "Today" -->
                 <div class="list-container">
                     <ul class="lista">
-                        <li>&downarrow; <strong>Today</strong>
+                        <li>&dtrif; <span class="title-list">Today</span>
                             <ul class="lista">
                                 <li> <span class="check">&check;</span> 
                                     Recruiting Blog Post
@@ -66,7 +74,7 @@
                 <!-- Lista "Upcomig" -->
                 <div class="list-container">
                     <ul class="lista">
-                        <li>&downarrow; <strong>Upcoming</strong>
+                        <li>&dtrif; <span class="title-list">Upcoming</span>
                             <ul class="lista">
                                 <li> <span class="cross">&cross;</span> 
                                     Schedule meeting with Alex

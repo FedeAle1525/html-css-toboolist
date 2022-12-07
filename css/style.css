@@ -2,24 +2,34 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header-logo{
-    margin: 15px;
+    /* Più corretto usare padding xkè distanzio contenuto da margine */
+    padding: 15px;
+    /* Stile per modificare il titolo se non si usava il tag "h1" */
+    /* font-size: 36px;
+    font-weight: 700; */
 }
 
 .logo{
     vertical-align: middle;
 }
 
+/* Va dato a entrambi la proprietà "vertical-aligh" perchè sono elementi block trasformati in "inline" */
 .titolo{
     display: inline;
+    vertical-align: middle;
 }
 
 .main{
     background-color: rgb(205, 207, 214);
-    padding: 50px;
+    padding: 60px 0;
 }
 
 .main-container{
@@ -32,6 +42,7 @@
 .header-button{
     height: 60px;
     padding: 15px 50px;
+    border-bottom: 1px solid  rgb(205, 207, 214);
 }
 
 .button-task{
@@ -51,26 +62,42 @@
 }
 
 .list-container{
-    margin: 20px 50px;
+    /* Meglio usare padding perchè separo contenuto dal contenitore */
+    padding: 5px 50px;
 }
 
+/* Si poteva resetterare direttamente usando il tag "ul" */
 .lista{
     list-style-type: none;
 }
 
-li{
-    padding: 5px;
+.title-list{
+    /* Richiamo il font importato con lo spessore che mi serve */
+    font-weight: 700;
+    font-size: 18px;
 }
 
+li{
+    /* Meglio usare margin xkè sto separando elementi interni a un blocco */
+    margin: 10px;
+}
 
+/* Meglio usare doppia classe per gestire gli stili comuni e per quelli specifici in modo diverso */
 .check{
+    /* Usare proprietà "currentcolor" sul bordo per farsi che il bordo prenda il colore del testo, senza doverlo modificare */
     border: 1px solid green;
     color: green;
+    /* Serve per creare un "cerchio", se l'elemento è quadrato (hxw) */
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    margin-right: 10px;
+    /* Serve "inline-block" per poter modificare altezza e larghezza essendo il tag "span" un elemento "inline" */
     display: inline-block;
+    /* Serve per centrare orizzontalmente testo */
     text-align: center;
+    /* Serve per centrare verticalmente testo, dando stesso valore di "height" */
+    line-height: 20px;
 }
 
 .cross{
@@ -79,54 +106,77 @@ li{
     border-radius: 50%;
     width: 20px;
     height: 20px;
+    margin-right: 10px;
     display: inline-block;
     text-align: center;
+    line-height: 20px;
 }
 
+/* Usare le classi doppi per gestire attributi comuni e non */
 .editorial{
     font-size: 10px;
     background-color: blue;
     color: white;
-    padding: 5px 10px;
+    /* Al posto del padding sup e inf, meglio gestire la "line-height" pr essere più flessibili in caso cambi il testo */
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    /* Per distanziare dal testo */
+    margin-left: 10px;
 }
 
 .q1goals{
     font-size: 10px;
     background-color: violet;
     color: white;
-    padding: 5px 10px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .recruting{
     font-size: 10px;
     background-color: green;
     color: white;
-    padding: 5px 10px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .mobile{
     font-size: 10px;
     background-color: orange;
     color: white;
-    padding: 5px 10px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .website{
     font-size: 10px;
     background-color: pink;
     color: white;
-    padding: 5px 10px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    margin-left: 10px;
 }
 
 .sales{
     font-size: 10px;
     background-color: yellowgreen;
     color: white;
-    padding: 5px 10px;
+    padding: 0 10px;
+    display: inline-block;
+    line-height: 25px;
     border-radius: 10px;
+    margin-left: 10px;
 }
